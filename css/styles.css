@@ -1,0 +1,108 @@
+ Color Theme Swatches in Hex 
+.Clearbit-Website-Design-1-hex { color: #9591F2; }
+.Clearbit-Website-Design-2-hex { color: #111BD9; }
+.Clearbit-Website-Design-3-hex { color: #BBBDF2; }
+.Clearbit-Website-Design-4-hex { color: #3876F2; }
+.Clearbit-Website-Design-5-hex { color: #CEDEF2; }
+
+Color Theme Swatches in RGBA 
+.Clearbit-Website-Design-1-rgba { color: rgba(148, 145, 242, 1); }
+.Clearbit-Website-Design-2-rgba { color: rgba(17, 27, 216, 1); }
+.Clearbit-Website-Design-3-rgba { color: rgba(186, 189, 242, 1); }
+.Clearbit-Website-Design-4-rgba { color: rgba(55, 117, 242, 1); }
+.Clearbit-Website-Design-5-rgba { color: rgba(205, 221, 242, 1); }
+
+ Color Theme Swatches in HSLA 
+.Clearbit-Website-Design-1-hsla { color: #9391f2; }
+.Clearbit-Website-Design-2-hsla { color: #111ed4; }
+.Clearbit-Website-Design-3-hsla { color: hsla(236, 68, 84, 1); }
+.Clearbit-Website-Design-4-hsla { color: hsla(219, 87, 58, 1); }
+.Clearbit-Website-Design-5-hsla { color: hsla(213, 58, 87, 1); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #CEDEF2;
+}
+  
+nav {
+    width: 100%;
+    color: white;
+    background: white;
+}
+.menu-index {
+    display: flex;
+    height: 6rem;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1200px;
+    justify-content: space-between;
+    background: none;
+}
+.menu-index img {
+  margin: 10px;
+  width: 65px;
+  height: 65px;
+  border-radius: 10%;
+  margin-right: 20px;
+  box-shadow: 2px 2px #111BD9;
+}
+.menu-links {
+  display: flex;
+  background: none;
+}
+.menu-links a {
+  margin: 10px;
+  text-decoration: none;
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+
+/*CARROSSEL*/
+
+.carousel-container {
+  position: relative;
+  display: inline-block; /* Para se ajustar ao tamanho da imagem */
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  bottom: 14px;
+  width: 40px;
+  height: 2px;
+  background-color: #9391f2;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px #CEDEF2;
+}
+
+.prev {
+  left: 53%;
+  transform: translateX(-75%); /* Posiciona o botão no canto inferior e ajusta para a esquerda */
+}
+
+.next {
+  right: 53%;
+  transform: translateX(75%); /* Posiciona o botão no canto inferior e ajusta para a direita */ 
+}
+
