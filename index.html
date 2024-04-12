@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="menu-index">
-                <img src="/imgs/logo.png" alt="logo-mgc">
-            <div class="menu-links">
-                <a href="">Home</a>
-                <a href="">Novidades</a>
-                <a href="">Produtos</a>
-                <a href="">Sobre</a>
-            </div>
+            <img src="/imgs/logo.png" alt="logo-mgc">
+            <ul>
+                <li><a class="menu" href="">Home</a></li>
+                <li><a class="menu" href="">News</a></li>
+                <li><a class="menu" href="">Products</a></li>
+                <li><a class="menu" href="">About</a></li>
+            </ul>
         </div>
     </nav>
     <main>
@@ -29,6 +29,146 @@
                 </div>
                     <button class="prev" onclick="prevSlide()"></button>
                     <button class="next" onclick="nextSlide()"></button>
+            </div>
+        </section>
+        <section class="section-news">
+            <div class="carroussel-novidades">
+                <h1>NOVIDADES</h1>
+                <hr><br>
+                <div class="container">
+                    <div class="carousel">
+                        <input type="radio" name="slides" checked="checked" id="slide-1">
+                        <input type="radio" name="slides" id="slide-2">
+                        <input type="radio" name="slides" id="slide-3">
+                        <input type="radio" name="slides" id="slide-4">
+                        <input type="radio" name="slides" id="slide-5">
+                        <input type="radio" name="slides" id="slide-6">
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-1"><img src="/imgs/perfume-1.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-2"><img src="/imgs/perfume-2.png" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-3"><img src="/imgs/perfume-3.png" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-4"><img src="/imgs/perfume-4.png" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-5"><img src="/imgs/perfume-5.png" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-6"><img src="/imgs/perfume-6.png" alt=""></label>
+                            </li>
+                        </ul>
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/imgs/perfume-1.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        <h2>Perfume X</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis
+                                             ex, possimus cum at odio, fugit ullam similique, sed dolorem expedita. Sequi 
+                                             quae debitis corrupti iusto adipisci sunt harum quod.lo Lorem ipsum dolor sit 
+                                             amet, consectetur adipisicing elit. Corrupti, doloribus. Rem velit ducimus nobis
+                                            doloremque, amet eos ab laborum non minus perferendis, blanditiis libero eveniet 
+                                              autem, quaerat labore? Cupiditate, repudiandae.</p>
+                                        <a href="#">Visualizar</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/imgs/perfume-2.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        <h2>Perfume X</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis
+                                             ex, possimus cum at odio, fugit ullam similique, sed dolorem expedita. Sequi 
+                                             quae debitis corrupti iusto adipisci sunt harum quod.lo Lorem ipsum dolor sit 
+                                             amet, consectetur adipisicing elit. Corrupti, doloribus. Rem velit ducimus nobis
+                                            doloremque, amet eos ab laborum non minus perferendis, blanditiis libero eveniet 
+                                              autem, quaerat labore? Cupiditate, repudiandae.</p>
+                                        <a href="#">Visualizar</a>                        
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/imgs/perfume-3.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        <h2>Perfume X</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis
+                                             ex, possimus cum at odio, fugit ullam similique, sed dolorem expedita. Sequi 
+                                             quae debitis corrupti iusto adipisci sunt harum quod.lo Lorem ipsum dolor sit 
+                                             amet, consectetur adipisicing elit. Corrupti, doloribus. Rem velit ducimus nobis
+                                            doloremque, amet eos ab laborum non minus perferendis, blanditiis libero eveniet 
+                                              autem, quaerat labore? Cupiditate, repudiandae.</p>
+                                        <a href="#">Visualizar</a>                       
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/imgs/perfume-4.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        <h2>Perfume X</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis
+                                             ex, possimus cum at odio, fugit ullam similique, sed dolorem expedita. Sequi 
+                                             quae debitis corrupti iusto adipisci sunt harum quod.lo Lorem ipsum dolor sit 
+                                             amet, consectetur adipisicing elit. Corrupti, doloribus. Rem velit ducimus nobis
+                                            doloremque, amet eos ab laborum non minus perferendis, blanditiis libero eveniet 
+                                              autem, quaerat labore? Cupiditate, repudiandae.</p>
+                                        <a href="#">Visualizar</a>                       
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/imgs/perfume-5.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        <h2>Perfume X</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis
+                                             ex, possimus cum at odio, fugit ullam similique, sed dolorem expedita. Sequi 
+                                             quae debitis corrupti iusto adipisci sunt harum quod.lo Lorem ipsum dolor sit 
+                                             amet, consectetur adipisicing elit. Corrupti, doloribus. Rem velit ducimus nobis
+                                            doloremque, amet eos ab laborum non minus perferendis, blanditiis libero eveniet 
+                                              autem, quaerat labore? Cupiditate, repudiandae.</p>
+                                        <a href="#">Visualizar</a>                       
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/imgs/perfume-6.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        <h2>Perfume X</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis
+                                             ex, possimus cum at odio, fugit ullam similique, sed dolorem expedita. Sequi 
+                                             quae debitis corrupti iusto adipisci sunt harum quod.lo Lorem ipsum dolor sit 
+                                             amet, consectetur adipisicing elit. Corrupti, doloribus. Rem velit ducimus nobis
+                                            doloremque, amet eos ab laborum non minus perferendis, blanditiis libero eveniet 
+                                              autem, quaerat labore? Cupiditate, repudiandae.</p>
+                                        <a href="#">Visualizar</a>                         
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
             </div>
         </section>
         <script src="/js/javascript.js"></script>

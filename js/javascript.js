@@ -1,4 +1,4 @@
-/*
+
 let slideIndex = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 const totalSlides = slides.length;
@@ -39,4 +39,5 @@ showSlide(slideIndex);
 
 // Iniciar o carrossel automaticamente ao carregar a página
 startCarousel();
-*/
+
+/* CARROUSEL PRODUTOS */

@@ -28,8 +28,7 @@ Color Theme Swatches in RGBA
   
 nav {
     width: 100%;
-    color: white;
-    background: white;
+    background: linear-gradient(to right, #0c0c0c, rgb(29, 29, 29), rgb(29, 29, 29), #0c0c0c);
 }
 .menu-index {
     display: flex;
@@ -46,25 +45,35 @@ nav {
   height: 65px;
   border-radius: 10%;
   margin-right: 20px;
-  box-shadow: 2px 2px #111BD9;
+  box-shadow: 2px 2px #9591F2;
 }
-.menu-links {
+ul {
   display: flex;
-  background: none;
+  gap: 1rem;
+  list-style: none;
 }
-.menu-links a {
-  margin: 10px;
-  text-decoration: none;
-  background: none;
-  font-size: 18px;
-  font-weight: bold;
+ul li {
+  color: white;
+  display: grid;
+  place-content: center;
+  margin: 0;
+}
+.menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all .5s ease;
+  bottom: 0;
+  left: 0;
 }
 main {
     margin: 0 auto;
     max-width: 1200px;
 }
-
-
 
 
 /*CARROSSEL*/
@@ -80,8 +89,8 @@ main {
 }
 
 .carousel-slide img {
-  width: 100%;
-  height: auto;
+  width: 75rem;
+  height: 350px;
 }
 
 .prev,
@@ -106,3 +115,177 @@ main {
   transform: translateX(75%); /* Posiciona o botão no canto inferior e ajusta para a direita */ 
 }
 
+/* SECTION 2 CARROUSEL */
+
+
+.section-news h1 {
+  background: #9391f2;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+}
+.carroussel-novidades {
+  background: #fffdf4;
+  padding: 2rem;
+}
+.carousel {
+  display: block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 22px;
+  background: #fffdf4;
+
+  
+  > input {
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      
+      &:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -507%; }
+      &:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -405.7%; }
+      &:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -304.2%; }
+      &:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -202.7%; }
+      &:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -101.3%; }
+      &:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 0%; }
+      
+  }
+}
+
+.carousel__slides {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+  box-sizing: border-box;
+  white-space: normal;
+  
+  
+  
+  figure {
+      display: flex;
+      margin: 0;
+      background: white;
+  }
+  
+  div {
+      width: 100%;
+      background: none;
+  }
+  
+  img {
+      display: block;
+      flex: 1 1 auto;
+      object-fit: cover;
+      width: 850px;
+      height: 450px;
+      border-radius: 20px;
+}
+  
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #BBBDF2;
+    margin-left: 3px;
+    border-radius: 10px;
+  }
+  figcaption h2 {
+    color: rgb(68, 0, 255);
+    background: none;
+    margin-top: 2rem;
+  }
+  figcaption p {
+    margin-top: 2rem;
+    color: rgb(65, 65, 65);
+    background: none;
+    max-width: 200px;
+    max-height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  figcaption a {
+    display: flex;
+    text-decoration: none;
+    color: #fffdf4;
+    background: #9591F2;
+    width: 250px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #000b47;
+  }
+  .credit {
+    margin-top: 1rem;
+    color: rgba(253, 253, 253, 0.5);
+    display: block;
+    background: linear-gradient(to right, #0c0c0c, rgb(29, 29, 29), rgb(29, 29, 29), #0c0c0c);     
+  }
+  
+  &.scrollable {
+      overflow-y: scroll;
+  }
+}
+
+.carousel__thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 0 -10px;
+  background: #fffdf4;
+  margin-bottom: 2rem;
+  
+  .carousel__slides + & {
+      margin-top: 20px;
+      
+  }
+  
+  li {        
+      flex: 1 1 auto;
+      max-width: calc((100% / 6) - 20px);  
+      margin: 0 10px;
+      transition: all 300ms ease-in-out;
+  }
+  
+  label {
+      display: block;
+      
+                
+      &:hover,
+      &:focus {
+          cursor: pointer;
+          
+          img {
+              box-shadow: 0px 0px 0px 3px #9591F2;
+              transition: all 300ms ease-in-out;
+          }
+      }
+  }
+  
+  img {
+      display: block;
+      width: 157px;
+      height: 100px;
+      object-fit: cover;
+  }
+}
