@@ -195,7 +195,7 @@ main {
       object-fit: cover;
       width: 850px;
       height: 450px;
-      border-radius: 20px;
+      border-radius: 10px;
 }
   
   figcaption {
@@ -203,12 +203,12 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #BBBDF2;
+    background-color: #CEDEF2;
     margin-left: 3px;
     border-radius: 10px;
   }
   figcaption h2 {
-    color: rgb(68, 0, 255);
+    color: #3876F2;
     background: none;
     margin-top: 2rem;
   }
@@ -225,7 +225,7 @@ main {
     display: flex;
     text-decoration: none;
     color: #fffdf4;
-    background: #9591F2;
+    background: #3876F2;
     width: 250px;
     height: 25px;
     justify-content: center;
@@ -285,7 +285,8 @@ main {
   img {
       display: block;
       width: 157px;
-      height: 100px;
+      height: 157px;
       object-fit: cover;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 }
