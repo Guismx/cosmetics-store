@@ -26,7 +26,7 @@ function prevSlide() {
 
 // Iniciar o carrossel automaticamente
 function startCarousel() {
-  intervalId = setInterval(nextSlide, 10000); // Alterar o slide a cada 3 segundos
+  intervalId = setInterval(nextSlide, 1000); // Alterar o slide a cada 3 segundos
 }
 
 // Parar o carrossel automático
@@ -40,4 +40,3 @@ showSlide(slideIndex);
 // Iniciar o carrossel automaticamente ao carregar a página
 startCarousel();
 
-/* CARROUSEL PRODUTOS */
