@@ -9,6 +9,12 @@ main {
   margin: 0 auto;
   max-width: 75rem;
 }
+.container-fluidcolor-line {
+  height: 3px;
+  margin: 0 auto;
+  max-width: 75rem;
+  background: linear-gradient(to right, rgb(1, 103, 255), rgb(0, 204, 255), rgb(0, 204, 255), rgb(1, 103, 255));
+}
 /*CONTROLE DE CORES*/
 :root {
   --azul-ceu: rgb(206, 222, 242);
@@ -144,7 +150,6 @@ nav {
   display: block;
   text-align: left;
   position: relative;
-  margin-bottom: 0.4rem;
   background: var(--azul-meia-noite);
 
   
@@ -229,6 +234,7 @@ nav {
     font-size: 1.25rem;
     border-radius: 0.62rem;
     box-shadow: 2px 2px var(--azul-meia-noite);
+    margin-top: 5rem;
   }
   figcaption a:hover {
     background: var(--branco-antigo);
